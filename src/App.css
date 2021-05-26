@@ -1,0 +1,121 @@
+.App {
+	background: url("./assets/ticket.jpg");
+	overflow: auto;
+	height: 100vh;
+}
+
+/* SiteNav.js */
+.nav {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.link:hover {
+	text-decoration: none;
+}
+
+/* CardContainer.js */
+.card-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+}
+
+/* Search.jsx */
+form {
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 1.5rem;
+	border-radius: 8px;
+	box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.6);
+}
+
+.search-label {
+	color: #333;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+/* CardContent.jsx */
+.movie-poster {
+	height: 300px;
+}
+
+.movie-card {
+	height: 100%;
+}
+
+.title-container {
+	margin: 0.5rem;
+}
+
+.info-btn {
+	width: 100%;
+}
+
+.info-btn {
+	width: 100% !important;
+}
+
+/* Movie.jsx */
+.movie-description-container {
+	padding: 3rem;
+	margin: 2rem;
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 8px;
+	box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.6);
+	color: #d6d6d6;
+}
+
+.list-group {
+	box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.6);
+}
+
+.movie-description {
+	background-color: #44444c !important;
+	border: none !important;
+	color: #d6d6d6;
+}
+
+hr {
+	background-color: #d6d6d6;
+	width: 100%;
+}
+
+.well {
+	width: 100%;
+}
+
+a {
+	color: white !important;
+}
+
+/* Error Page */
+.ErrorPage {
+	color: #fff;
+}
+
+.box-title {
+	font-size: 4rem;
+}
+
+/* Media Queries */
+@media (max-width: 760px) {
+	/* CardContainer.js */
+	.card-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (min-width: 750px) and (max-width: 1075px) {
+	.content-col {
+		width: 300px;
+		margin-left: 0.5rem;
+		margin-top: 0.5rem;
+	}
+}
+
+@media (min-width: 1080px) {
+	/* CardContainer.js */
+	.card-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
