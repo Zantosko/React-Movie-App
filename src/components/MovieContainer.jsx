@@ -19,7 +19,6 @@ export default function MovieContainer({ match }) {
     });
 
     const movieJson = await movieFetch.json();
-    console.log(movieJson)
 
     setMovieInfo(movieJson);
   }
